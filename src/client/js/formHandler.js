@@ -25,6 +25,7 @@ function handleSubmit(event) {
             .then(data => {
                 // console.log(JSON.stringify(data))
                 updateUI(data)
+
             })
     }
 }

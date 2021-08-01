@@ -2,9 +2,10 @@ function updateUI(data) {
 
     const results = document.getElementById('results');
     // create list for results
-    const resultsList = document.createElement('ul').setAttribute('id', 'results-list');
+    const resultsList = document.createElement('ul');
+    resultsList.setAttribute('id', 'result-list');
     // resets the result box
-    results.innerHTML = ''
+    resultsList.innerHTML = ''
 
     // creates results on DOM 
 
