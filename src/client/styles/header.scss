@@ -1,7 +1,8 @@
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  padding: 10px 40px;
+  align-items: center;
   background-color: rgb(0, 116, 145);
   height: 10vh;
 }
@@ -12,6 +13,7 @@ header {
   color: white;
   height: fit-content;
   padding: 10px;
+  align-self: flex-end;
   &:hover {
     text-decoration: underline;
   }
