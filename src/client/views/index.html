@@ -7,13 +7,14 @@
 
   <body>
     <header>
-      <div class="">Logo</div>
-      <div class="">navigation</div>
+      <div class=""><img src=".logo.png" alt="logo" /></div>
+      <div class="">HOME</div>
     </header>
 
     <main>
       <section>
-        <form class="" onsubmit="return Client.handleSubmit(event)">
+        <form class="form" onsubmit="return Client.handleSubmit(event)">
+          <h1>Analyze Articles by URL</h1>
           <input
             id="url"
             type="text"
@@ -24,6 +25,7 @@
           <input
             type="submit"
             name=""
+            class="submit"
             value="submit"
             onclick="return Client.handleSubmit(event)"
             onsubmit="return handleSubmit(event)"
@@ -38,7 +40,7 @@
     </main>
 
     <footer>
-      <p>This is a footer</p>
+      <p>&copy;2021 Emerson Espinoza</p>
     </footer>
   </body>
 </html>
