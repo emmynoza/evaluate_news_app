@@ -3,13 +3,13 @@ import { validateURL } from "./urlChecker";
 import { updateUI } from "./updateUI";
 
 function handleSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
     const inputURL = document.getElementById('url').value;
 
     if (validateURL(inputURL)) {
         callApi(inputURL)
     } else {
-        console.log('error1');
+        console.log('error');
     }
 
     async function callApi(url) {
@@ -27,6 +27,8 @@ function handleSubmit(event) {
                 updateUI(data)
 
             })
+
+
     }
 }
 export { handleSubmit }

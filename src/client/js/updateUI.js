@@ -5,7 +5,7 @@ function updateUI(data) {
     const resultsList = document.createElement('ul');
     resultsList.setAttribute('id', 'result-list');
     // resets the result box
-    resultsList.innerHTML = ''
+    results.innerHTML = ''
 
     // creates results on DOM 
 
