@@ -6,11 +6,7 @@ function handleSubmit(event) {
     event.preventDefault();
     const inputURL = document.getElementById('url').value;
 
-    if (validateURL(inputURL)) {
-        callApi(inputURL)
-    } else {
-        console.log('error');
-    }
+    validateURL(inputURL) ? callApi(inputURL) : console.log('error');
 
     async function callApi(url) {
         await fetch('/postdata', {
