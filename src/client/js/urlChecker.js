@@ -1,13 +1,7 @@
 function validateURL(url) {
-    let re = /^((https|http)?:\/\/)?(www?)[^"]+$/;
+    let re = /^(http|https)?:\/\/(www)?[^ "]+$/;
 
-    if (re.test(url)) {
-        console.log('valid');
-        return true
-    } else {
-        console.log('error');
-        return false
-    }
+    return re.test(url);
 }
 
 export { validateURL }
