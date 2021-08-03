@@ -13,13 +13,19 @@ function updateUI(data) {
     const agreement = `Agreement: ${data.agreement}`;
     const subjectivity = `Subjectivity: ${data.subjectivity}`;
     const confidence = `Confidence: ${data.confidence}`;
+    if (data.status.code === "0") {
+        resultsList.innerHTML = `
+        <li>${scoreTag}</li>
+        <li>${agreement}</li>
+        <li>${subjectivity}</li>
+        <li>${confidence}</li>
+        `
+    } else {
+        results.innerHTML = `
+        <h2> Page has no content </h2>
+        `
+    }
 
-    resultsList.innerHTML = `
-    <li>${scoreTag}</li>
-    <li>${agreement}</li>
-    <li>${subjectivity}</li>
-    <li>${confidence}</li>
-    `
     results.appendChild(resultsList)
 }
 

@@ -8,8 +8,8 @@ function handleSubmit(event) {
 
     validateURL(inputURL) ? callApi(inputURL) : console.log('error');
 
-    async function callApi(url) {
-        await fetch('/postdata', {
+    function callApi(url) {
+        fetch('/postdata', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
